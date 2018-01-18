@@ -1,0 +1,27 @@
+{
+  "name": "aws-sdk-wrapper",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenhak/nodejs-aws-sdk-wrapper.git"
+  },
+  "author": "Ruben Hakpoian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenhak/nodejs-aws-sdk-wrapper/issues"
+  },
+  "homepage": "https://github.com/rubenhak/nodejs-aws-sdk-wrapper#readme"
+}
