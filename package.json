@@ -1,16 +1,19 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
+    "aws-sdk": "^2.184.0",
     "bunyan": "^1.8.12",
     "lodash": "^4.17.4",
     "shelljs": "^0.8.0",
+    "ssh2": "^0.5.5",
     "string-builder": "^0.1.4",
+    "the-logger": "^1.0.9",
     "the-promise": "^1.0.3",
     "uuid": "^3.2.1"
   },
