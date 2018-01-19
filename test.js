@@ -3,21 +3,15 @@ var logger = require('the-logger').setup('bunyan', 'TEST', {
 });
 logger.info('Test Start...');
 
+var Promise = require('the-promise');
+
 var client = require('.')('us-east-1');
-// client.logger.level = 'debug';
-
-// client.Vpc.fetchForCluster(true, 'myproject', '10.0.0.0/16')
-//     .then(obj => {
-//         logger.info('The VPC: ', obj);
-//     })
-//     .catch(error => {
-//         logger.error('There was error: ', error);
-//     });
+client.logger.level = 'info';
 
 
-client.Lambda.updateFunctionCode('markClusterDirty', 'D:\\Repos\\Berlioz.git\\node-test\\sample-lambda-code')
+return Promise.resolve()
     .then(obj => {
-        logger.info('The VPC: ', obj);
+        logger.info('Result: ', obj);
     })
     .catch(error => {
         logger.error('There was error: ', error);

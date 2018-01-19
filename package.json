@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -10,6 +10,7 @@
     "archiver": "^2.1.1",
     "aws-sdk": "^2.184.0",
     "bunyan": "^1.8.12",
+    "deep-equal": "^1.0.1",
     "dynamodb": "^1.0.0",
     "joi": "^13.1.0",
     "lodash": "^4.17.4",
