@@ -12,38 +12,38 @@ client.logger.level = 'info';
 
 // return client.Vpc.queryAll('adjasensy')
 
-var dynamo = client.DynamoDB;
-
-var ClusterDeployments = dynamo.define('clusterDeployment', {
-    hashKey: 'accountId',
-    rangeKey: 'full_name',
-
-    timestamps: false,
-
-    schema: {
-        accountId: Joi.string(),
-        full_name: Joi.string(),
-        region: Joi.string(),
-        cluster: Joi.string(),
-        deployment: Joi.string(),
-        isProcessing: Joi.boolean(),
-        processingStartDate: Joi.date(),
-        isDirty: Joi.boolean(),
-        dirtyStartDate: Joi.date()
-    }
-});
-
-ClusterDeployments.update({
-        accountId: 'aaaaa',
-        full_name: 'bbbbb',
-        dirtyStartDate: new Date(),
-        isDirty: true
-    }, {}, function (err, obj) {
-        logger.info('UPDATE RESULT ERR: ', err);
-        logger.info('UPDATE RESULT OBJ: ', obj);
-    });
-
-return;
+// var dynamo = client.DynamoDB;
+//
+// var ClusterDeployments = dynamo.define('clusterDeployment', {
+//     hashKey: 'accountId',
+//     rangeKey: 'full_name',
+//
+//     timestamps: false,
+//
+//     schema: {
+//         accountId: Joi.string(),
+//         full_name: Joi.string(),
+//         region: Joi.string(),
+//         cluster: Joi.string(),
+//         deployment: Joi.string(),
+//         isProcessing: Joi.boolean(),
+//         processingStartDate: Joi.date(),
+//         isDirty: Joi.boolean(),
+//         dirtyStartDate: Joi.date()
+//     }
+// });
+//
+// ClusterDeployments.update({
+//         accountId: 'aaaaa',
+//         full_name: 'bbbbb',
+//         dirtyStartDate: new Date(),
+//         isDirty: true
+//     }, {}, function (err, obj) {
+//         logger.info('UPDATE RESULT ERR: ', err);
+//         logger.info('UPDATE RESULT OBJ: ', obj);
+//     });
+//
+// return;
 
 
 
