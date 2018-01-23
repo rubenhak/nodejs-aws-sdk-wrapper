@@ -11,7 +11,32 @@ client.logger.level = 'info';
 
 var dynamo = client.DynamoDB;
 
-return Promise.resolve()
+var ClusterDeployments = dynamo.define('clusterDeployment', {
+    hashKey: 'accountId',
+    rangeKey: 'full_name',
+
+    timestamps: false,
+
+    schema: {
+        accountId: Joi.string(),
+        full_name: Joi.string(),
+        region: Joi.string(),
+        cluster: Joi.string(),
+        deployment: Joi.string(),
+        isProcessing: Joi.boolean(),
+        processingStartDate: Joi.date(),
+        isDirty: Joi.boolean(),
+        dirtyStartDate: Joi.date()
+    }
+
+});
+
+//
+return dynamo.model('clusterDeployment').query('723255635421').where('deployment-index').equals('test').exec()
+    .then(result => {
+        return result.Items;
+    })
+//return Promise.resolve()
     .then(obj => {
         logger.info('Result: ', obj);
     })
