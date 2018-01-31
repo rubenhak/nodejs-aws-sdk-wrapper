@@ -6,7 +6,7 @@ logger.info('Test Start...');
 var Promise = require('the-promise');
 var Joi = require('joi');
 
-var client = require('.')('us-east-1', {
+var client = require('.')('us-west-2', {
     profile: 'croundme'
 }, logger);
 client.logger.level = 'verbose';
@@ -38,8 +38,12 @@ client.logger.level = 'verbose';
 //     .then(result => {
 //         return result.Items;
 //     })
-//return Promise.resolve()
-return client.Repository.create('ruben1')
+return Promise.resolve()
+// return client.Repository.fetch('adjasensy-cassandra')
+//     .then(repo => {
+//         logger.info('Result: ', repo);
+//         return client.Repository.pushImage(repo, 'adjasensy-cassandra');
+//     })
     .then(obj => {
         logger.info('Result: ', obj);
     })
