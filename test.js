@@ -6,10 +6,13 @@ logger.info('Test Start...');
 var Promise = require('the-promise');
 var Joi = require('joi');
 
-var client = require('.')('us-west-2', {
-    profile: 'croundme'
+// var client = require('.')('us-west-2', {
+//     profile: 'croundme'
+// }, logger);
+var client = require('.')('us-east-1', {
+    profile: 'berlioz'
 }, logger);
-client.logger.level = 'verbose';
+client.logger.level = 'silly';
 //
 // var dynamo = client.DynamoDB;
 //
@@ -39,7 +42,6 @@ client.logger.level = 'verbose';
 //         return result.Items;
 //     })
 return Promise.resolve()
-// return client.Repository.fetch('adjasensy-cassandra')
 //     .then(repo => {
 //         logger.info('Result: ', repo);
 //         return client.Repository.pushImage(repo, 'adjasensy-cassandra');

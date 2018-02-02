@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.39",
+  "version": "1.0.41",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,7 @@
     "aws-sdk": "^2.188.0",
     "bunyan": "^1.8.12",
     "deep-equal": "^1.0.1",
-    "joi": "^13.1.1",
+    "joi": "^13.1.2",
     "lodash": "^4.17.4",
     "memory-stream": "0.0.3",
     "node-uuid": "1.4.x",
