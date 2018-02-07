@@ -37,10 +37,6 @@ client.logger.level = 'silly';
 // });
 
 // //
-// return dynamo.model('clusterDeployment').query('723255635421').where('deployment-index').equals('test').exec()
-//     .then(result => {
-//         return result.Items;
-//     })
 return Promise.resolve()
 //     .then(repo => {
 //         logger.info('Result: ', repo);
