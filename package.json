@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.55",
+  "version": "1.0.56",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "archiver": "^2.1.1",
     "async": "1.5.x",
-    "aws-sdk": "^2.204.0",
+    "aws-sdk": "^2.205.0",
     "bunyan": "^1.8.12",
     "deep-equal": "^1.0.1",
     "joi": "^13.1.2",
@@ -20,7 +20,7 @@
     "ssh2": "^0.5.5",
     "string-builder": "^0.1.4",
     "the-logger": "^1.0.25",
-    "the-promise": "^1.0.13",
+    "the-promise": "^1.0.14",
     "uuid": "^3.2.1"
   },
   "devDependencies": {},
