@@ -10,7 +10,7 @@ var Joi = require('joi');
 //     profile: 'croundme'
 // }, logger);
 var client = require('.')('us-east-1', {
-    profile: 'berlioz'
+    profile: 'croundme', // 'berlioz'
 }, logger);
 client.logger.level = 'silly';
 //
@@ -36,12 +36,7 @@ client.logger.level = 'silly';
 //
 // });
 
-// //
 return Promise.resolve()
-//     .then(repo => {
-//         logger.info('Result: ', repo);
-//         return client.Repository.pushImage(repo, 'adjasensy-cassandra');
-//     })
     .then(obj => {
         logger.info('Result: ', obj);
     })
