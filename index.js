@@ -1,4 +1,3 @@
-
 module.exports = function(region, credentials, logger)
 {
     if (!logger) {
