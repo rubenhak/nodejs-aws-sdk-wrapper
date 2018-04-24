@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.80",
+  "version": "1.0.81",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -12,17 +12,17 @@
     "bunyan": "^1.8.12",
     "deep-equal": "^1.0.1",
     "joi": "^13.2.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.10",
     "memory-stream": "0.0.3",
     "node-uuid": "1.4.x",
     "rubenhak-shelljs": "^0.8.3",
     "ssh2": "^0.5.5",
-    "the-logger": "^1.0.25",
-    "the-promise": "^1.0.14",
+    "the-logger": "^1.0.26",
+    "the-promise": "^1.0.15",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "aws-sdk": "^2.224.1"
+    "aws-sdk": "^2.228.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
