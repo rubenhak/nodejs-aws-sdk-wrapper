@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.81",
+  "version": "1.0.83",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -22,7 +22,7 @@
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "aws-sdk": "^2.228.1"
+    "aws-sdk": "^2.229.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
