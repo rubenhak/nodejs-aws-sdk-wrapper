@@ -4,6 +4,7 @@ var logger = require('the-logger').setup('bunyan', 'TEST', {
 logger.info('Test Start...');
 
 var Promise = require('the-promise');
+var _ = require('lodash');
 var Joi = require('joi');
 
 // var client = require('.')('us-west-2', {
@@ -35,8 +36,51 @@ client.logger.level = 'silly';
 //     }
 //
 // });
+//
+// function doSomething()
+// {
+//     logger.info('doSomething....');
+// }
+//
+// const ThrottledQueue = require('throttled-queue');
+// var throttle = ThrottledQueue(10, 1000, true);
+//
+// function doWork()
+// {
+//     // logger.info('doWork....');
+//     return new Promise(function(resolve, reject) {
+//         throttle(() => {
+//             try {
+//                 return Promise.resolve(doSomething())
+//                     .then(result => {
+//                         resolve(result);
+//                     })
+//                     .catch(reason => {
+//                         reject(reason);
+//                     })
+//             } catch (e) {
+//                 reject(e);
+//             }
+//         });
+//     });
+// }
 
 return Promise.resolve()
+    .then(() => client.Vpc) //.queryAll({})
+    // .then(() => Promise.serial(_.range(100), () => doWork()))
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
+    // .then(() => doWork())
     .then(obj => {
         logger.info('Result: ', obj);
     })
