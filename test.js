@@ -66,7 +66,7 @@ client.logger.level = 'silly';
 // }
 
 return Promise.resolve()
-    .then(() => client.Vpc) //.queryAll({})
+    .then(() => client.Vpc.queryAll({}))
     // .then(() => Promise.serial(_.range(100), () => doWork()))
     // .then(() => doWork())
     // .then(() => doWork())
