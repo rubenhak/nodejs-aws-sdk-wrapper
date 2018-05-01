@@ -16,6 +16,8 @@ var client = require('.')('us-east-1', {
 client.logger.level = 'info';
 
 return Promise.resolve()
+    .then(() => client.DynamoDB)
+    .then(() => null)
     .then(() => client.Vpc.queryAll({}))
     .then(obj => {
         logger.info('Result: ', obj);
