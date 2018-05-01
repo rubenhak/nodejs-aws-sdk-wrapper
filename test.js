@@ -13,7 +13,7 @@ var Joi = require('joi');
 var client = require('.')('us-east-1', {
     profile: 'croundme', // 'berlioz'
 }, logger);
-client.logger.level = 'silly';
+client.logger.level = 'info';
 
 return Promise.resolve()
     .then(() => client.Vpc.queryAll({}))
