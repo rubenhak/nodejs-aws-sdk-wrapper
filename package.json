@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.115",
+  "version": "1.0.116",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -17,8 +17,8 @@
     "node-uuid": "1.4.x",
     "rubenhak-shelljs": "0.8.3",
     "ssh2": "0.5.5",
-    "the-logger": "^1.0.28",
-    "the-promise": "^1.0.17",
+    "the-logger": "^1.0.29",
+    "the-promise": "^1.0.18",
     "uuid": "3.2.1"
   },
   "devDependencies": {
