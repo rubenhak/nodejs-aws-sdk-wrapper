@@ -11,14 +11,14 @@ var Joi = require('joi');
 //     profile: 'croundme'
 // }, logger);
 var client = require('.')('us-east-1', {
-    profile: 'croundme', // 'berlioz'
+    profile: 'insieme', //'croundme', // 'berlioz'
 }, logger);
 client.logger.level = 'info';
 
+var vpc = null;
+var ig = null;
 return Promise.resolve()
     .then(() => client.DynamoDB)
-    .then(() => null)
-    .then(() => client.Vpc.queryAll({}))
     .then(obj => {
         logger.info('Result: ', obj);
     })
