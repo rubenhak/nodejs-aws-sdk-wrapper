@@ -13,12 +13,35 @@ var Joi = require('joi');
 var client = require('.')('us-east-1', {
     profile: 'insieme', //'croundme', // 'berlioz'
 }, logger);
-client.logger.level = 'info';
+client.logger.level = 'verbose';
 
-var vpc = null;
-var ig = null;
 return Promise.resolve()
     .then(() => client.DynamoDB)
+    .then(() => {
+        var tableConfig = {
+            AttributeDefinitions: [{
+                    AttributeName: "Artist",
+                    AttributeType: "S"
+                },
+                {
+                    AttributeName: "SongTitle",
+                    AttributeType: "S"
+                }
+            ],
+            KeySchema: [{
+                    AttributeName: "Artist",
+                    KeyType: "HASH"
+                },
+                {
+                    AttributeName: "SongTitle",
+                    KeyType: "RANGE"
+                }
+            ]
+        };
+        return client.Dynamo.create('myNewTable', tableConfig);
+    })
+    // .then(() => client.Dynamo.queryAll('my'))
+    .then(() => client.Dynamo.delete('myNewTable'))
     .then(obj => {
         logger.info('Result: ', obj);
     })
