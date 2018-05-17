@@ -17,6 +17,7 @@ client.logger.level = 'verbose';
 
 return Promise.resolve()
     .then(() => client.DynamoDB)
+    .then(() => {})
     .then(obj => {
         logger.info('Result: ', obj);
     })
