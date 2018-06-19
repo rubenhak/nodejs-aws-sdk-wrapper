@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.0.136",
+  "version": "1.0.137",
   "description": "",
   "main": "index.js",
   "directories": {
