@@ -18,7 +18,7 @@ client.logger.level = 'verbose';
 return Promise.resolve()
     .then(() => client.DynamoDB)
     .then(() => {})
-    // .then(() => client.SystemsManager.writeParameter('/prod/lab/kaka', '1234-abcd'))
+    .then(() => client.SystemsManager.writeParameter('/prod/lab/kaka', '1234-abcd'))
     // .then(() => client.SystemsManager.queryAllParams('/localHomePC/lab/')) //
     // .then(() => client.SystemsManager.deleteParam('/localHomePC/lab/personal')) //
     // .then(() => client.KeyManagement.createKey({}, { 'berlioz:deployment': 'kaka'}))
