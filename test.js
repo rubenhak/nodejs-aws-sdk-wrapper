@@ -1,4 +1,4 @@
-var logger = require('the-logger').setup('bunyan', 'TEST', {
+var logger = require('the-logger').setup('TEST', {
     enableFile: false
 });
 logger.info('Test Start...');
@@ -23,5 +23,6 @@ return Promise.resolve()
         logger.info('Result: ', obj);
     })
     .catch(error => {
-        logger.error('There was error: ', error);
+        logger.error('**************** There was error: ');
+        logger.error(error);
     });

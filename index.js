@@ -1,7 +1,7 @@
 module.exports = function(region, credentials, logger)
 {
     if (!logger) {
-        logger = require('the-logger').setup('bunyan', 'AWSClient', {
+        logger = require('the-logger').setup('AWSClient', {
             enableFile: false
         });
         logger.level = 'info';
