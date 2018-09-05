@@ -41,8 +41,7 @@
     "async": "1.5.x",
     "aws-sdk": "^2.186.x",
     "joi": "10.x.x",
-    "lodash": "4.x.x",
-    "node-uuid": "1.4.x"
+    "lodash": "4.x.x"
   },
   "deprecated": false,
   "description": "DynamoDB data mapper for node.js",
