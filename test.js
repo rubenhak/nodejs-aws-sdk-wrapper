@@ -11,13 +11,16 @@ var Joi = require('joi');
 //     profile: 'croundme'
 // }, logger);
 var client = require('.')('us-east-1', {
-    profile: 'insieme', //'croundme', // 'berlioz'
+    profile: 'berlioz'// 'insieme', //'croundme', // 'berlioz'
 }, logger);
 client.logger.level = 'verbose';
 
 return Promise.resolve()
     .then(() => client.DynamoDB)
     .then(() => {})
+    // .then(() => client.ApiGateway.queryAllRestAPIs('api'))
+    // .then(() => client.ApiGateway.queryAllResources('kzg4eo15y2'))
+    .then(() => client.ApiGateway.queryMethod('kzg4eo15y2', 'wyae3k', 'POST'))
     .then(obj =>  {
         // console.log(obj)
         logger.info('Result: ', obj);
