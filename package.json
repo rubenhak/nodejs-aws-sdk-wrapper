@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.1.51",
+  "version": "1.1.53",
   "description": "A wrapper library on top of AWS SDK.",
   "main": "index.js",
   "directories": {
