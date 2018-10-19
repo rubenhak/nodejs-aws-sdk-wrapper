@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.1.70",
+  "version": "1.1.71",
   "description": "A wrapper library on top of AWS SDK.",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,7 @@
     "ssh2": "0.5.5",
     "the-lodash": "^1.0.11",
     "the-logger": "^1.1.15",
-    "the-promise": "^1.1.0",
+    "the-promise": "^1.1.1",
     "uuid": "3.2.1"
   },
   "devDependencies": {
