@@ -10,7 +10,7 @@ var Joi = require('joi');
 // var client = require('.')('us-west-2', {
 //     profile: 'croundme'
 // }, logger);
-var client = require('.')('us-east-1', {
+var client = require('.')('us-west-2', {
     profile: 'insieme'// 'insieme', //'croundme', // 'berlioz'
 }, logger);
 client.logger.level = 'verbose';
