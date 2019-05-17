@@ -11,7 +11,7 @@ var Joi = require('joi');
 //     profile: 'croundme'
 // }, logger);
 var client = require('.')('us-west-2', {
-    profile: 'insieme'// 'insieme', //'croundme', // 'berlioz'
+    profile: 'berlioz-test'// 'insieme', //'croundme', // 'berlioz'
 }, logger);
 client.logger.level = 'verbose';
 
