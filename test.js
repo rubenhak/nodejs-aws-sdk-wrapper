@@ -19,6 +19,7 @@ return Promise.resolve()
     .then(() => client.DynamoDB)
     .then(() => {})
     .then(() => {
+        return client.Task.queryAllForCluster('zzz')
     })
     .then(obj =>  {
         // console.log(obj)
