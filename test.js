@@ -5,7 +5,7 @@ logger.info('Test Start...');
 
 var Promise = require('the-promise');
 var _ = require('the-lodash');
-var Joi = require('joi');
+var Joi = require('@hapi/joi');
 
 // var client = require('.')('us-west-2', {
 //     profile: 'croundme'

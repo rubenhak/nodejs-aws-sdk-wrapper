@@ -1,18 +1,18 @@
 {
   "name": "aws-sdk-wrapper",
-  "version": "1.1.95",
+  "version": "1.1.96",
   "description": "A wrapper library on top of AWS SDK.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
+    "@hapi/joi": "15.1.0",
     "archiver": "2.1.1",
     "async": "1.5.x",
     "aws-arn-parser": "^1.0.1",
-    "joi": "13.3.0",
     "memory-stream": "0.0.3",
-    "processing-tools": "^1.0.107",
+    "processing-tools": "^1.0.108",
     "rubenhak-shelljs": "0.8.3",
     "ssh2": "0.5.5",
     "the-lodash": "^1.0.14",
@@ -21,7 +21,7 @@
     "uuid": "3.2.1"
   },
   "devDependencies": {
-    "aws-sdk": "^2.475.0"
+    "aws-sdk": "^2.493.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
