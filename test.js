@@ -16,6 +16,7 @@ var client = require('.')('us-west-2', {
 client.logger.level = 'verbose';
 
 return Promise.resolve()
+    .then(() => client.ApiGatewayHelper)
     .then(() => client.DynamoDB)
     .then(() => {})
     .then(() => {
