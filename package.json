@@ -9,7 +9,7 @@
   "dependencies": {
     "@hapi/joi": "15.1.0",
     "archiver": "2.1.1",
-    "async": "1.5.x",
+    "async": "2.6.x",
     "aws-arn-parser": "^1.0.1",
     "memory-stream": "0.0.3",
     "processing-tools": "^1.0.113",
