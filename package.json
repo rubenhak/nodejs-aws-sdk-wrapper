@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@hapi/joi": "15.1.0",
+    "@hapi/joi": "15.1.1",
     "archiver": "2.1.1",
     "async": "1.5.x",
     "aws-arn-parser": "^1.0.1",
